@@ -318,7 +318,7 @@ nav ul li:hover > ul li:hover {
 
 .col_3{
 	display: inline-block;
-	width:32%;
+	width:31.6%;
 	margin-left: 0.5%;
 	margin-right:0.5%;
 	margin-bottom: 1.2%;
@@ -329,7 +329,7 @@ nav ul li:hover > ul li:hover {
 
 .col_2{
 	display: inline-block;
-	width:48.6%;
+	width:48.4%;
 	margin-left: 0.5%;
 	margin-right:0.5%;
 	margin-bottom: 0.5%;
@@ -365,7 +365,7 @@ nav ul li:hover > ul li:hover {
 
 .col_2_photo{
     display: inline-block;
-    width:48.6%;
+    width:48.4%;
     margin-left: 0.5%;
     margin-right:0.5%;
     margin-bottom: 1%;
@@ -373,7 +373,7 @@ nav ul li:hover > ul li:hover {
 }
 .col_4_gif{
     display: inline-block;
-    width: 23.7%;
+    width: 23%;
     margin-left: 0.5%;
     margin-right: 0.5%;
     margin-bottom: 0%;
