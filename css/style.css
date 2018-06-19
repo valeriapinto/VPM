@@ -404,6 +404,25 @@ nav ul li:hover > ul li:hover {
     align-content: center;
 }
 
+.col_vertical{
+  display: inline-block;
+  width:31.6%;
+  padding-top: 0.5%;
+  padding-bottom: 0%;
+  padding-left: 4%
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+  margin-right:0.5%;
+  margin-bottom: 0.5%;
+  position: relative;
+    z-index: 0;
+}
+
+.margin_adjust{
+  padding-left: 3%;
+
+}
+
 /*confetti css  */
 
 /*body {
