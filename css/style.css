@@ -543,7 +543,9 @@ nav ul li:hover > ul li:hover {
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
 
-  
+  *{
+  box-sizing: border-box;
+}
 
   .mask {
     position: absolute;
@@ -607,6 +609,10 @@ nav ul li:hover > ul li:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
+
+  *{
+  box-sizing: border-box;
+}
 
 #about{
     -webkit-transform: translate3d(0, 0, 0);
