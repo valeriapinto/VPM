@@ -289,7 +289,8 @@ nav ul a {
     text-decoration: none;
     line-height: 30px;
     padding: 15px;
-    font-size:20px;
+    font-size:23px;
+    padding-right: 40px;
 }
 
 nav ul a:hover {
@@ -340,6 +341,15 @@ nav ul li:hover > ul li:hover {
 
 *{
 	box-sizing: border-box;
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: inline;
+
+  
 }
 
 .wrapper{
@@ -531,13 +541,184 @@ nav ul li:hover > ul li:hover {
 @media only screen and (min-width: 768px) and (max-width: 995px) {}
 
 /* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+
+  
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+    padding-top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.thumb:hover .mask {
+    opacity: 0;
+}
+
+.thumb .mask h2
+.thumb .mask a {
+
+    opacity: 0;
+    color: white;
+    text-orientation: center;
+    text-decoration: none;
+}
+
+.thumb:hover .mask h2
+.thumb:hover .mask a {
+    opacity: 0;
+    text-orientation: center;
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+}
+
+.thumb img {
+    transform: scale(0);
+    transform: rotate(0deg);
+    transition: all 0s ease;
+}
+
+.thumb:hover img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.logo{
+  width: 160%;
+  height: 160%;
+  position: absolute;
+  display: inline;
+
+  
+}
+}
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+
+#about{
+    -webkit-transform: translate3d(0, 0, 0);
+    text-align: justify-all;
+    font-size: 1 em;
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#about h1{
+  -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+}
+
+
+  .col_3{
+  display: block;
+  width:100%;
+  margin-left: 0.5%;
+  margin-right:0.5%;
+  margin-bottom: 1.2%;
+    margin-top: 0%;
+    position: relative;
+    z-index: 0;
+}
+
+.col_2_photo{
+    display: block;
+    width:100%;
+    margin-left: 0.5%;
+    margin-right:0.5%;
+    margin-bottom: 1.2%;
+    margin-top: 0%;
+}
+
+.col_2_about{
+    display: block;
+    width:100%;
+    margin-left: 0%;
+    margin-right:0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.col_2{
+  display: block;
+  width:100%;
+  margin-left: 0.5%;
+  margin-right:0.5%;
+  margin-bottom: 2%;
+  margin-top: 0%;
+}
+
+.col_2_square{
+    display: inline-block;
+    width:29.6%;
+    margin-left: 2%;
+    margin-right:0%;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+
+
+.thumb .mask a {
+
+    width:100%;
+    height: 200%;
+    display: block;
+    text-decoration: none;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+.mask a {
+
+  padding: 0;
+  shape-margin: 0;
+  text-align: center;
+}
+
+  nav ul a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    line-height: 30px;
+    /*padding: 15px;*/
+    font-size:16px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.logo{
+  width: 180%;
+  height: 180%;
+  position: absolute;
+  display: inline;
+
+}
+
+footer a{
+    color: black;
+    position: absolute;
+    display: inline;
+    z-index: 1;
+    font-size: 14px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+}
 
 </style>
 /* =============================================================================

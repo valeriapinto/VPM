@@ -15,7 +15,7 @@
     <meta name="description" content="Valeria Pinto is a Costa Rican multidisciplinary media artist living and studying in New York City.">
     <meta name="keywords" content="Artist, Valeria Pinto, New York City, Brooklyn, Designer, Photographer, Art Director, Costa Rica, Media Artist, Social Media, Content Creator">
     <meta name="author" content="Valeria Pinto">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -34,7 +34,8 @@
     </div> -->
 
     <header class="clearfix">
-    <img src="img/newlogo3.gif" alt="Valeria Pinto's Logo" title="VPM logo" href="index.html">
+    <div class="logo">
+    <a href="index.html"><img src="img/newlogo3.gif" alt="Valeria Pinto's Logo" title="VPM logo"></a></div>
         <nav>
             
             <ul id="menu" >
@@ -53,22 +54,35 @@
 
     <div class="wrapper clearfix">
 
-    <div>
+    <div class="thumb col_3">
+            <picture>
+            <source srcset="img/home/six/iphone/photography.jpg" media="(max-width: 767px)">
+            <source srcset="img/home/six/tour.jpg" media="(max-width: 1500px)">
+            <img src="img/home/six/tour.jpg" alt="Photography" style="width:auto;">
+            </picture>
+            <div class="mask">
+            <h2><a href="photography.html">Photography</a></h2>
+            </div>
+              
+           
+    </div>
 
     <div class="thumb col_3">
-            <img src="img/home/six/tour.jpg" alt="Photography" />
-            <div class="mask">
-                <h2><a href="photography.html">Photography</a></h2>
-            </div>
-    </div>
-    <div class="thumb col_3">
-            <img src="img/home/six/three.jpg" alt="3D Modeling" />
+            <picture>
+            <source srcset="img/home/six/iphone/3d.jpg" media="(max-width: 767px)">
+            <source srcset="img/home/six/three.jpg" media="(max-width: 1500px)">
+            <img src="img/home/six/three.jpg" alt="3D Modeling" style="width:auto;">
+            </picture>
             <div class="mask">
                 <h2><a href="productdesign.html">3D Modeling</a></h2>
             </div>
     </div>
     <div class="thumb col_3">
-            <img src="img/home/six/technology2.jpg" alt="Creative Coding" />
+            <picture>
+            <source srcset="img/home/six/iphone/ccoding.jpg" media="(max-width: 767px)">
+            <source srcset="img/home/six/technology2.jpg" media="(max-width: 1500px)">
+            <img src="img/home/six/technology2.jpg" alt="Creative Coding" style="width:auto;">
+            </picture>
             <div class="mask">
                 <h2><a href="technology.html">Creative Coding</a></h2>
             </div>
@@ -76,22 +90,34 @@
 
     </div>
 
-    <div>
+    <div class="wrapper clearfix">
     
     <div class="thumb col_3">
-            <img src="img/home/six/mockup.jpg" alt="Content Creation" />
+            <picture>
+            <source srcset="img/home/six/iphone/ccreation.jpg" media="(max-width: 767px)">
+            <source srcset="img/home/six/mockup.jpg" media="(max-width: 1500px)">
+            <img src="img/home/six/mockup.jpg" alt="Content Creation" style="width:auto;">
+            </picture>
             <div class="mask">
                 <h2><a href="graphicdesign.html">Content Creation</a></h2>
             </div>
     </div>
     <div class="thumb col_3">
-            <img src="img/home/six/food.jpg" alt="Food Media" />
+            <picture>
+            <source srcset="img/home/six/iphone/food.jpg" media="(max-width: 767px)">
+            <source srcset="img/home/six/food.jpg" media="(max-width: 1500px)">
+            <img src="img/home/six/food.jpg" alt="Food Media" style="width:auto;">
+            </picture>
             <div class="mask">
                 <h2><a href="food.html">Food Media</a></h2>
             </div>
     </div>
     <div class="thumb col_3">
-            <img src="img/home/six/bkbridge.jpg" alt="Travel & Architecture" />
+            <picture>
+            <source srcset="img/home/six/iphone/travelarch.jpg" media="(max-width: 767px)">
+            <source srcset="img/home/six/bkbridge.jpg" media="(max-width: 1500px)">
+            <img src="img/home/six/bkbridge.jpg" alt="Travel & Architecture" style="width:auto;">
+            </picture>
             <div class="mask">
                 <h2><a href="contentcreation.html">Travel & Architecture </a></h2>
             </div>
@@ -157,8 +183,8 @@
     <footer>
     &copy; Valeria Pinto 2018 / Instagram :
  
-    <a href="https://www.instagram.com/colorbyvaleria/"> &nbsp;@colorbyvaleria&nbsp; 
-    <i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/colorbyvaleria/"> &nbsp;@colorbyvaleria&nbsp; </a>
+    <!-- <i class="fa fa-instagram" aria-hidden="true"></i></a> -->
 
     <p>This website was 100% made by me! #girlswhocode </p>
     </footer>
