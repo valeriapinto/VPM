@@ -14,7 +14,7 @@
     <meta name="description" content="Valeria Pinto is a Costa Rican multidisciplinary media artist living and studying in New York City.">
     <meta name="keywords" content="Artist, New York City, Brooklyn, Designer, Photographer, Art Director, Costa Rica, Media Artist, Social Media, Content Creator">
     <meta name="author" content="Valeria Pinto">
-    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -43,10 +43,10 @@
     <!-- <div class="wrapper clearfix "> -->
     <h3></h3>
     
-    <h1 class="about" id="about">I am a Costa Rican media artist, photographer, designer and coder focusing in color and aesthetic. <br> I currently study Integrated Digital Media at NYU, and live in Brooklyn, NY.</h1>
+    <h1 class="about" id="about">I'm a Costa Rican media artist, photographer, designer and coder focusing in color and aesthetic. <br> I currently study Integrated Digital Media at NYU, and live in Brooklyn, NY.<br>Yes, refresh! Colors are random #girlswhocode</h1>
     <br>
     <img class="col_2_about" src="img/about/valeria.png">
-    <img class="col_2_photo" src="img/about/aboutmecopy.jpg">
+    <img class="col_2_photo" src="img/about/bio10.jpg">
     <!-- <img class="col_2_about" src="img/about/fun2.jpg">
     <img class="col_2_about" src="img/about/sitting.jpg"> -->
     <!-- <h3 class="about">I have always loved capturing the architecture of things - food, clothing, buildings, relationships. <br> My eye understands how color and design work together in order to attract, inspire or provoke a feeling. Although I work in media, my biggest passions go beyond a digital screen. I love baking cakes, creating structures and taking disposable photographs. </h3>
@@ -56,6 +56,7 @@
 
      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+
     <footer>
     &copy; Valeria Pinto 2018 / Instagram :
  
@@ -73,15 +74,31 @@
         
             var mySplitText = new SplitText("#about", {type:"words"}),
         tl = new TimelineLite(),
-        numWords = mySplitText.words.length;
+        // numWords = mySplitText.words.length;
 
-            for(var i = 0; i < numWords; i++){
-                tl.from(mySplitText.words[i], 2, {opacity:-10}, Math.random() * 4);
-            }
+        //     for(var i = 0; i < numWords; i++){
+        //         tl.from(mySplitText.words[i], 2, {opacity:-10}, Math.random() * 4);
+        //     }
 
-        function randomNumber(min, max) {
-        return Math.floor(Math.random() * (1 + max - min) + min);
-    }
+        // function randomNumber(min, max) {
+        // return Math.floor(Math.random() * (1 + max - min) + min);
+
+        //  }
+
+         numWords = mySplitText.words;
+
+        $(numWords).each(function(index, word){
+
+        var randomColor = "#"+Math.random().toString(16).slice(2,8);
+        
+        tl.add( TweenMax.to(word, 0.02, {color: randomColor}) );
+        });
+
+        // Returns a light HSL color with random alpha
+    randomColor({
+    luminosity: 'bright',
+    format: 'rgba'
+    });
 
     </script>
 
