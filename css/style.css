@@ -93,6 +93,11 @@ h2 {
     margin-top: 17px;
 }
 
+h2.titles {
+
+  color:black;
+}
+
 h3.about {
     text-align: center;
     font-size: 1 em;
@@ -112,6 +117,10 @@ a.about {
 
 a.thumb_col_3 {
 
+  text-align: center;
+}
+
+p.line {
   text-align: center;
 }
 
@@ -143,6 +152,8 @@ footer a{
     position: absolute;
     z-index: 1;
 }
+
+
 
 .h2 {
 

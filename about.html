@@ -41,18 +41,18 @@
     </header>
 <!--     <h1>Who is Valeria?</h1> -->
     <!-- <div class="wrapper clearfix "> -->
-    <h3></h3>
     
-    <h1 class="about" id="about">I'm a Costa Rican media artist, photographer, designer and coder focusing in color and aesthetic. <br> I currently study Integrated Digital Media at NYU, and live in Brooklyn, NY.<br>Yes, refresh! Colors are random #girlswhocode</h1>
+    <h1 class="about" id="about">I'm a Costa Rican media artist, photographer, designer and coder focusing in color and aesthetic. <br> I currently study Integrated Digital Media at NYU, and live in Brooklyn, NY.<br>Yes, refresh // Colors are random #girlswhocode</h1>
+    
     <br>
     <img class="col_2_about" src="img/about/valeria.png">
-    <img class="col_2_photo" src="img/about/bio10.jpg">
+    <img class="col_2_photo" src="img/about/aboutmecopy6.jpg">
     <!-- <img class="col_2_about" src="img/about/fun2.jpg">
     <img class="col_2_about" src="img/about/sitting.jpg"> -->
     <!-- <h3 class="about">I have always loved capturing the architecture of things - food, clothing, buildings, relationships. <br> My eye understands how color and design work together in order to attract, inspire or provoke a feeling. Although I work in media, my biggest passions go beyond a digital screen. I love baking cakes, creating structures and taking disposable photographs. </h3>
     <h3 class="about">For questions, concerns, collaborations, ideas, jobs, anything; email me at valeria.pinto@nyu.edu :) </h3> -->
     <h3 class="backto">Resume ↓</h3>
-    <img class="resume" src="img/about/CV-ValeriaPinto.jpg">
+    <img class="resume" src="img/about/resumeValeriaPinto.jpg">
 
      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -91,14 +91,15 @@
 
         var randomColor = "#"+Math.random().toString(16).slice(2,8);
         
-        tl.add( TweenMax.to(word, 0.02, {color: randomColor}) );
+        tl.add( TweenMax.to(word, 0.1, {color: randomColor}) );
         });
 
         // Returns a light HSL color with random alpha
-    randomColor({
-    luminosity: 'bright',
-    format: 'rgba'
-    });
+        
+        randomColor({
+        luminosity: 'bright',
+        format: 'hsla'
+        });
 
     </script>
 
