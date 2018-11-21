@@ -82,7 +82,11 @@ h1{
 
 h1.about {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1 em;
+    display: inline;
+    margin: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 h2 {
@@ -152,7 +156,6 @@ footer a{
     position: absolute;
     z-index: 1;
 }
-
 
 
 .h2 {
@@ -426,8 +429,8 @@ nav ul li:hover > ul li:hover {
 }
 .col_4_gif{
     display: inline-block;
-    width: 23%;
-    margin-left: 0.5%;
+    width: 26%;
+    margin-left: 5%;
     margin-right: 0.5%;
     margin-bottom: 0%;
     margin-top: 0%;
@@ -444,9 +447,9 @@ nav ul li:hover > ul li:hover {
 
 .col_1_video{
     display: inline-block;
-    width:80%;
+    width: 80.1%;
     margin-left: 9.5%;
-    margin-right:0.5%;
+    margin-right:9.5%;
     margin-bottom: 0%;
     margin-top: 0%;
     align-content: center;
@@ -524,13 +527,20 @@ nav ul li:hover > ul li:hover {
 #about{
     -webkit-transform: translate3d(0, 0, 0);
     text-align: center;
-    font-size: 1 em;
+    font-size: 0.8 em;
     color: black;
     padding-right: 20px;
     padding-left: 20px;
+    display: block;
 }
 
 #about h1{
+  display: block;
+  font-size: 0.8 em;
+  margin: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
   -webkit-font-smoothing: antialiased;
     -moz-font-smoothing:antialiased;
 }
@@ -628,10 +638,9 @@ nav ul li:hover > ul li:hover {
 #about{
     -webkit-transform: translate3d(0, 0, 0);
     text-align: justify-all;
-    font-size: 1 em;
+    font-size: 2.2em;
     color: black;
-    padding-right: 20px;
-    padding-left: 20px;
+
 }
 
 #about h1{
@@ -640,22 +649,54 @@ nav ul li:hover > ul li:hover {
 }
 
 
-  .col_3{
-  display: block;
-  width:100%;
-  margin-left: 0.5%;
-  margin-right:0.5%;
+  .col_1_video{
+    display: inline-block;
+    width:80%;
+    margin-left: 8%;
+    margin-right:0.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding: 0;
+    align-content: center;
+}
+
+  .resume {
+    display: block;
+    position: center;
+    width: 80%;
+    margin-left: 0%
+    margin-right:2%;
   margin-bottom: 1.2%;
     margin-top: 0%;
     position: relative;
     z-index: 0;
 }
 
+  .col_3{
+  display: block;
+  width:100%;
+  margin-left: 0%;
+  margin-right:0%;
+  margin-bottom: 1.2%;
+    margin-top: 0%;
+    position: relative;
+    z-index: 0;
+}
+
+.col_4_gif{
+    display: inline-block;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
 .col_2_photo{
     display: block;
     width:100%;
-    margin-left: 0.5%;
-    margin-right:0.5%;
+    margin-left: 0%;
+    margin-right:0%;
     margin-bottom: 1.2%;
     margin-top: 0%;
 }
@@ -672,8 +713,8 @@ nav ul li:hover > ul li:hover {
 .col_2{
   display: block;
   width:100%;
-  margin-left: 0.5%;
-  margin-right:0.5%;
+  margin-left: 0%;
+  margin-right:0%;
   margin-bottom: 2%;
   margin-top: 0%;
 }

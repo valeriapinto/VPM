@@ -22,6 +22,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="newlogo.png" />
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="https://use.fontawesome.com/a98b145351.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
 </head>
 
 <body>
@@ -41,26 +42,32 @@
     </header>
 <!--     <h1>Who is Valeria?</h1> -->
     <!-- <div class="wrapper clearfix "> -->
-    
-    <h1 class="about" id="about">I'm a Costa Rican media artist, photographer, designer and coder focusing in color and aesthetic. <br> I currently study Integrated Digital Media at NYU, and live in Brooklyn, NY.<br>Yes, refresh // Colors are random #girlswhocode</h1>
-    
     <br>
-    <img class="col_2_about" src="img/about/valeria.png">
-    <img class="col_2_photo" src="img/about/aboutmecopy6.jpg">
+   <div class="clearfix"><h1 id="about"> Valeria is a visual artist, UX/UI designer and web developer based in Brooklyn, NY.</h1>
+   <br>
+   <div class="clearfix">
+   	<img class="col_4_gif" src="img/about/valeria.png">
+	<img class="col_4_gif" src="img/about/valeria2.png">
+    <img class="col_4_gif" src="img/about/valeria3.png">
+   </div>
+    <!-- <img class="col_2_photo" src="img/about/aboutmecopy6.jpg"> -->
     <!-- <img class="col_2_about" src="img/about/fun2.jpg">
     <img class="col_2_about" src="img/about/sitting.jpg"> -->
-    <!-- <h3 class="about">I have always loved capturing the architecture of things - food, clothing, buildings, relationships. <br> My eye understands how color and design work together in order to attract, inspire or provoke a feeling. Although I work in media, my biggest passions go beyond a digital screen. I love baking cakes, creating structures and taking disposable photographs. </h3>
-    <h3 class="about">For questions, concerns, collaborations, ideas, jobs, anything; email me at valeria.pinto@nyu.edu :) </h3> -->
+    <br>
+     <h3 class="backto">Who I am ↓</h3>
+    <h3 class="about">I have always been two things: an engineer and an artist. I use both sides of my brain to create beautiful solutions to everyday problems in design and code. I love understanding the way things work, how everything is built - a camera, a building  and even a chocolate cake. <br> My eye understands how color and empathy work together to provoke a feeling. Although I work in media, my biggest passions go beyond a digital screen. I love baking cookies, creating structures and taking disposable photographs. </h3>
+    <h3 class="about">Say hi at valeria.pinto@nyu.edu or follow my instagram account at @vibrantvaleria </h3>
+    <br>
     <h3 class="backto">Resume ↓</h3>
-    <img class="resume" src="img/about/resumeValeriaPinto.jpg">
-
+    <img class="resume" src="img/about/resume_forweb.jpg">
+	</body>
      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
 
     <footer>
     &copy; Valeria Pinto 2018 / Instagram :
  
-    <a href="https://www.instagram.com/colorbyvaleria/"> &nbsp;@colorbyvaleria&nbsp; </a>
+    <a href="https://www.instagram.com/vibrantvaleria/"> &nbsp;@vibrantvaleria&nbsp; </a>
     <!-- <i class="fa fa-instagram" aria-hidden="true"></i></a> -->
 
     <p>This website was 100% made by me! #girlswhocode </p>
@@ -89,17 +96,22 @@
 
         $(numWords).each(function(index, word){
 
-        var randomColor = "#"+Math.random().toString(16).slice(2,8);
+        var color = randomColor({
+   		luminosity: 'light',
+  		hue: 'red'
+		});
+
+        // var randomColor = "#"+Math.random().toString(16).slice(2,8);
         
-        tl.add( TweenMax.to(word, 0.1, {color: randomColor}) );
+        tl.add( TweenMax.to(word, 0.1, {color: color}) );
         });
 
         // Returns a light HSL color with random alpha
         
-        randomColor({
-        luminosity: 'bright',
-        format: 'hsla'
-        });
+        // randomColor({
+        // luminosity: 'bright',
+        // format: 'hsla'
+        // });
 
     </script>
 
