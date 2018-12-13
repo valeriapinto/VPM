@@ -184,28 +184,48 @@ footer a{
     transition: all 1s ease;
 }
 
+  .mask div {
+  position: relative;
+  }
+
 .thumb:hover .mask {
     opacity: 1;
 }
 
+  .mask a {
+
+    width:100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+
 .thumb .mask h2
 .thumb .mask a {
 
-    opacity: 0;
+/*    opacity: 0;*/
     transform: scale(0);
     transition: all 0s ease-in-out;
     color: white;
     text-orientation: center;
     text-decoration: none;
+    height: 100%;
+    display: block;
+    position: absolute;
 }
 
 .thumb:hover .mask h2
 .thumb:hover .mask a {
-    opacity: 1;
+
     transform: scale(1);
     text-orientation: center;
     text-decoration: none;
     color: white;
+    height: 100%;
+    display: block;
+    position: absolute;
+    
 
 }
 
